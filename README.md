@@ -63,6 +63,13 @@ This tutorial is designed for Linux with Anaconda.
 
 `$ export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/cuda-10.1/lib64`
 
+7) We download weights and tiny weights
+
+`$ wget https://pjreddie.com/media/files/yolo.weights`
+
+`$ wget https://pjreddie.com/media/files/yolo-tiny.weights`
+
+
 ## Reference
 
 This project copies lots of code from [darknet](https://github.com/pjreddie/darknet) , [Seq-NMS](https://github.com/lrghust/Seq-NMS) and  [models](https://github.com/tensorflow/models).
