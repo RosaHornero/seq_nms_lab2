@@ -53,7 +53,15 @@ This tutorial is designed for Linux with Anaconda.
 
 5) Once we have the environment activated we create the project by executing the makefile as follows:
 
-`make`
+`$ make`
+
+6) Once the project was created we had to modify the PATH and LD\_LIBRARY\_PATH variables of the develoment environment:
+
+`$ export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}`
+
+`$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.1/lib64`
+
+`$ export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/cuda-10.1/lib64`
 
 ## Reference
 
