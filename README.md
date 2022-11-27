@@ -17,7 +17,7 @@ This tutorial is designed for Linux with Anaconda.
 1) Open a terminal in the folder where you are going to work.
 2) Clone the repository and go to the seq_nm folder:
 
-`$ git clone `
+`$ git clone https://github.com/RosaHornero/seq_nms_lab2.git`
 
 `$ cd seq_nms`
 
