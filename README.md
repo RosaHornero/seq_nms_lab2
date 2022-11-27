@@ -1,6 +1,8 @@
 # Seq_nms_YOLO
-This project is adapted from https://github.com/melodiepupu/seq_nms_yolo to simplify the execution of Seq-NMS and YOLOv2 approaches for video object detection.
+This project is an adaptation of https://github.com/melodiepupu/seq_nms_yolo to help install and run the Seq-NMS and YOLOv2 for video object detection.
 #### Membres: Yunyun SUN, Yutong YAN, Sixiang XU, Heng ZHANG
+
+#### Adapted by: Laura Herrera, Rosa Hornero
 
 
 ---
@@ -91,10 +93,12 @@ This tutorial is designed for Linux with Anaconda.
 
 `$ python img2video.py -i output`
 
+The result will be found in video/output
+
 ## Reference
 
 This project copies lots of code from [darknet](https://github.com/pjreddie/darknet) , [Seq-NMS](https://github.com/lrghust/Seq-NMS) and  [models](https://github.com/tensorflow/models).
 
-Some instructions were extracted from: https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html
-
+Some instructions were extracted from: https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html and 
+https://github.com/sergiomcgd/seq_nms.git
 
