@@ -12,6 +12,16 @@ This project is adapted from https://github.com/melodiepupu/seq_nms_yolo to simp
 This project combines **YOLOv2**([reference](https://arxiv.org/abs/1506.02640)) and **seq-nms**([reference](https://arxiv.org/abs/1602.08465)) to realise **real time video detection**.
 This tutorial is designed for Linux with Anaconda.
 
+## Steps
+
+1) Open a terminal in the folder where you are going to work.
+2) Clone the repository and go to the seq_nm folder:
+```
+$ git clone
+```
+```
+$ cd seq_nms
+```
 
 ## Reference
 
