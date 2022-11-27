@@ -69,15 +69,22 @@ This tutorial is designed for Linux with Anaconda.
 
 `$ wget https://pjreddie.com/media/files/yolo-tiny.weights`
 
-8) Place an avi format video in the folder ./seq_nms/video
+8) Place an avi format video in the folder /seq_nms/video
 
 9) Access that folder and execute the following commands:
-10) 
+
 `$ cd video`
 
 `$ python video2img.py -i example_video.avi`
 
 `$ python get_pkllist.py`
+
+10) We go back to the /seq_nms folder and run the yolo_seqnms.py script in charge of detecting the objects in each frame
+
+`$ cd ..`
+
+`$ python yolo_seqnms.py`
+
 
 
 ## Reference
