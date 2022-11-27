@@ -21,6 +21,31 @@ This tutorial is designed for Linux with Anaconda.
 
 `$ cd seq_nms`
 
+3) We create the environment. Two ways 'automatically' or 'manually'.
+
+   3.1 Automatically. We modify the script `Yolo_env.yml`, putting the name of the environment that we want in the first line and we change in the last line the prefix with the address where we will save the environment. Then run the following command in the terminal:
+  
+     `$ conda env create -f Yolo_env.yml`
+  
+   3.2 Manually. 
+     
+     - We create an anaconda environment with python 2.7 (it is important that it is this version as it is the one supported by the code)
+     
+       `conda create --name env_name python=2.7`
+       
+     - Activate the environment
+     
+        `source activate env_name`
+        
+      - We install the following libraries
+        - cv2: `conda install -c conda-forge opencv`
+        - matplotlib: `conda install matplotlib`
+        - scipy: `conda install -c anaconda scipy`
+        - tensorflow: `conda install -c anaconda tensorflow-gpu`
+        - pillow: `conda install -c anaconda pillow`
+        - tf_object_detection: `conda install -c conda-forge tf_object_detection`
+  
+
 ## Reference
 
 This project copies lots of code from [darknet](https://github.com/pjreddie/darknet) , [Seq-NMS](https://github.com/lrghust/Seq-NMS) and  [models](https://github.com/tensorflow/models).
