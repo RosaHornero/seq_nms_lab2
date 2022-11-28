@@ -23,9 +23,9 @@ This tutorial is designed for Linux with Anaconda.
 
 `$ cd seq_nms`
 
-3) We create the environment. Two ways 'automatically' or 'manually'.
+3) Create the environment. Two ways 'automatically' or 'manually'.
 
-   3.1 Automatically. We modify the script `Yolo_env.yml`, putting the name of the environment that we want in the first line and we change in the last line the prefix with the address where we will save the environment. Then run the following command in the terminal:
+   3.1 Automatically. Modify the script `Yolo_env.yml`, putting the name of the environment that you want in the first line and change in the last line the prefix with the address where you will save the environment. Then run the following command in the terminal:
   
      `$ conda env create -f Yolo_env.yml`
      
@@ -33,7 +33,7 @@ This tutorial is designed for Linux with Anaconda.
   
    3.2 Manually. 
      
-     - We create an anaconda environment with python 2.7 (it is important that it is this version as it is the one supported by the code)
+     - Create an anaconda environment with python 2.7 (it is important that it is this version as it is the one supported by the code)
      
        `$ conda create --name env_name python=2.7`
        
@@ -41,7 +41,7 @@ This tutorial is designed for Linux with Anaconda.
      
         `$ source activate env_name`
         
-      - We install the following libraries
+      - Install the following libraries
         - cv2: `$ conda install -c conda-forge opencv`
         - matplotlib: `$ conda install matplotlib`
         - scipy: `$ conda install -c anaconda scipy`
@@ -49,15 +49,15 @@ This tutorial is designed for Linux with Anaconda.
         - pillow: `$ conda install -c anaconda pillow`
         - tf_object_detection: `$ conda install -c conda-forge tf_object_detection`
   
-4) We install opencv with version 4.2.0.32 to avoid any warning or error when reconstructing the video.
+4) Install opencv with version 4.2.0.32 to avoid any warning or error when reconstructing the video.
 
 `$ pip install opencv-python==4.2.0.32`
 
-5) Once we have the environment activated we create the project by executing the makefile as follows:
+5) Once you have the environment activated, create the project by executing the makefile as follows:
 
 `$ make`
 
-6) Once the project was created we had to modify the PATH and LD\_LIBRARY\_PATH variables of the develoment environment:
+6) Once the project was created you have to modify the PATH and LD\_LIBRARY\_PATH variables of the develoment environment:
 
 `$ export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}`
 
@@ -65,7 +65,7 @@ This tutorial is designed for Linux with Anaconda.
 
 `$ export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/cuda-10.1/lib64`
 
-7) We download weights and tiny weights
+7) Then download weights and tiny weights
 
 `$ wget https://pjreddie.com/media/files/yolo.weights`
 
@@ -73,7 +73,7 @@ This tutorial is designed for Linux with Anaconda.
 
 8) Place an avi format video in the folder /seq_nms/video
 
-9) Accede a esa carpeta y ejecuta los siguientes comandos para pasar el video a frames.
+9) Access that folder and execute the following commands to convert the video to frames.
 
 `$ cd video`
 
@@ -81,7 +81,7 @@ This tutorial is designed for Linux with Anaconda.
 
 `$ python get_pkllist.py`
 
-10) We go back to the /seq_nms folder and run the 'yolo_seqnms.py' script in charge of detecting the objects in each frame.
+10) Go back to the /seq_nms folder and run the 'yolo_seqnms.py' script in charge of detecting the objects in each frame.
 
 `$ cd ..`
 
